@@ -1,21 +1,22 @@
-# landing-page
+# React Fest Landing Page
 
-> React Fest Landing Page
+> Yes , it's in vue guys , leave it alone . I did not see the irony of what I was doing 😝
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-npm install
+yarn
 
 # serve with hot reload at localhost:8080
-npm run dev
+yarn dev
 
 # build for production with minification
-npm run build
+yarn build
 
 # build for production and view the bundle analyzer report
-npm run build --report
-```
+yarn build --report
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# deploy
+yarn build && cd dist/ && now
+```
