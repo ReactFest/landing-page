@@ -4,6 +4,7 @@
     <section class="wrapper">
       <img height="150px" src="../assets/logo.svg" alt="react fest logo"/>
       <h1>ReactFest</h1>
+      <h3>London , 2 March 2018</h3>
       <h2>a one day festival of amazing React content</h2>
 
       <section class="susbscribe">
@@ -68,6 +69,12 @@ h1 {
   line-height: 57px;
   font-size: 100px;
   transition: all 200ms ease;
+  margin-bottom: 0;
+
+  +  h3 {
+    margin-top: 0;
+    font-size: 24px;
+  }
 
   @media only screen and (max-width: 600px) {
     font-size: 60px;
