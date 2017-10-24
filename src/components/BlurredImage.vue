@@ -38,6 +38,7 @@ img {
   transform: translateX(-50%) translateY(-50%);
   height: 100vmax;
   filter: blur(10px);
+  transition: all 200ms ease;
   z-index: -1;
 
   &.loaded {

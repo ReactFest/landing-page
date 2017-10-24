@@ -4,12 +4,12 @@
     <section class="wrapper">
       <img height="150px" src="../assets/logo.svg" alt="react fest logo"/>
       <h1>ReactFest</h1>
-      <h2>A Day Full Of Your Favourite React Content</h2>
+      <h2>a one day festival of amazing React content</h2>
 
       <section class="susbscribe">
 <form action="https://yld.us16.list-manage.com/subscribe/post?u=d159c019fc10dc08b3914ac05&amp;id=5a3093fa2a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" v-on:submit="onSubmit">
     <div id="fo">
-      <h3>Subscribe to our conference email updates to hear about the latest news and any special offers.</h3>
+      <h3>Subscribe to hear the latest ReactFest news</h3>
         <div class="fields">
           <input type="email" value="" placeholder="Your email" name="EMAIL" required class="email" id="mce-EMAIL">
           <div id="mce-responses" class="clear">

@@ -29,8 +29,12 @@ export default {
 body,
 html {
   margin: 0;
-  min-height: 100%;
+  height: 100%;
   width: 100%;
+
+  @media only screen and (max-width: 600px) {
+    min-height: 100%;
+  }
 
   * {
     box-sizing: border-box;
