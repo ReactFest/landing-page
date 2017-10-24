@@ -1,7 +1,7 @@
 <template>
-  <section class="susbscribe">
+  <section class="subscribe-wrapper">
     <form action="https://yld.us16.list-manage.com/subscribe/post?u=d159c019fc10dc08b3914ac05&amp;id=5a3093fa2a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" v-on:submit="onSubmit">
-      <h3>Subscribe to hear the latest ReactFest news</h3>
+      <h3>Subscribe to hear about the latest ReactFest news</h3>
         <div class="fields">
           <input type="email" value="" placeholder="Your email" name="EMAIL" required class="email" id="mce-EMAIL">
           <div id="mce-responses" class="clear">
@@ -61,6 +61,7 @@ h3 {
   padding: 10px;
   margin-right: 6px;
   color: #4A4A4A;
+  font-family: 'Roboto', sans-serif;
   border-radius: 0;
 
   &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -133,7 +134,10 @@ h3 {
     .email {
       width: 100%;
     }
-
   }
+}
+
+.subscribe-wrapper {
+  margin-top: 40px;
 }
 </style>
