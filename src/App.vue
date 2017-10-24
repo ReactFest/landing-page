@@ -4,18 +4,18 @@
       src="https://file-imaqlsttvx.now.sh/"
       small-src="https://file-bsyvngpoyb.now.sh/"
     ></BlurredImage>
-    <hello></hello>
+    <Main/>
   </main>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Main from './components/Main'
 import BlurredImage from './components/BlurredImage'
 
 export default {
   name: 'app',
   components: {
-    Hello,
+    Main,
     BlurredImage
   }
 }
