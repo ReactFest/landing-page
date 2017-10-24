@@ -1,59 +1,53 @@
 <template>
-  <div id="app">
-    <header>
-      <span>Vue.js PWA</span>
-    </header>
-    <main>
-      <img src="./assets/logo.png" alt="Vue.js PWA">
-      <hello></hello>
-    </main>
-  </div>
+  <main>
+    <BlurredImage
+      src="https://file-imaqlsttvx.now.sh/"
+      small-src="https://file-bsyvngpoyb.now.sh/"
+    ></BlurredImage>
+    <hello></hello>
+  </main>
 </template>
 
 <script>
 import Hello from './components/Hello'
+import BlurredImage from './components/BlurredImage'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    Hello,
+    BlurredImage
   }
 }
 </script>
 
-<style>
-body {
-  margin: 0;
-}
+<style lang="scss">
+@import '~normalize.css';
+@import './assets/swedenSans/stylesheet.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,900');
 
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+body,
+html {
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+
+  * {
+    box-sizing: border-box;
+  }
 }
 
 main {
+  font-family: 'Sweden Sans', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
   text-align: center;
-  margin-top: 40px;
-}
-
-header {
-  margin: 0;
-  height: 56px;
-  padding: 0 16px 0 24px;
-  background-color: #35495E;
-  color: #ffffff;
-}
-
-header span {
-  display: block;
-  position: relative;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: .02em;
-  font-weight: 400;
-  box-sizing: border-box;
-  padding-top: 16px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 </style>
