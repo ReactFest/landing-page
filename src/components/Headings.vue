@@ -18,6 +18,7 @@ h1 {
   line-height: 57px;
   font-size: 100px;
   transition: all 200ms ease;
+  font-family: 'Sweden Sans';
 
   @media only screen and (max-width: 600px) {
     font-size: 60px;

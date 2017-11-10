@@ -3,7 +3,7 @@
       <h3>Come speak at ReactFest</h3>
       <a href="https://t.co/bWzDRNZzQA"
         class="submit">
-          Call for Papers
+          <span>Call for Papers</span>
       </a>
     <form action="https://yld.us16.list-manage.com/subscribe/post?u=d159c019fc10dc08b3914ac05&amp;id=5a3093fa2a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" v-on:submit="onSubmit">
       <h3>Subscribe to hear about the latest ReactFest news</h3>
@@ -28,6 +28,7 @@
                 </button>
           </div>
     </form>
+    <div class="section">
       <ul>
         <li>
           <a href="mailto:hey@reactfest.com">
@@ -45,6 +46,8 @@
           </a>
         </li>
       </ul>
+        <p>If you would like to sponsor please email at: <a href="mailto:hello@reactfest.com">hello@reactfest.com</a></p>
+      </div>
 </section>
 </template>
 
@@ -66,13 +69,25 @@ export default {
 
 <style lang="scss" scoped>
 
-  ul {
-    position: absolute;
-    bottom: -150px;
+  .section {
+    position: relative;
+    margin-top: 150px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 50px;
+  }
+
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     li {
       list-style: none;
@@ -85,6 +100,23 @@ h3 {
   font-weight: 500;
   line-height: 30px;
   font-size: 18px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  display: block;
+  width: 100%;
+
+  a {
+    color: #37B75D;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .email {
@@ -158,6 +190,78 @@ h3 {
 
 a.submit {
   margin-bottom: 60px;
+  background: #4A4A4A;
+  color: #FFF;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 200ms ease;
+  left: 5px;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+
+  &:active,
+  &:hover {
+    &:before {
+      top: 1px;
+      right: 1px;
+    }
+
+    &:after {
+      top: 2px;
+      right: 2px;
+    }
+  }
+
+
+  span {
+    z-index: 10;
+    display: block;
+    position: relative;
+    background: #4A4A4A;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    top: 5px;
+    right: 5px;
+    z-index: 2;
+    transition: all 200ms ease;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #37B75D;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    transition: all 200ms ease;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+    flex-direction: column;
+
+  .submit,
+  a.submit{
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .email {
+    width: 100%;
+  }
 }
 
 .fields {
@@ -167,17 +271,18 @@ a.submit {
   align-self: center;
   position: relative;
 
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     flex-direction: column;
 
-    .submit {
-      width: 100%;
-      margin-top: 20px;
-    }
+  .submit,
+  a.submit{
+    width: 100%;
+    margin-top: 20px;
+  }
 
-    .email {
-      width: 100%;
-    }
+  .email {
+    width: 100%;
+  }
   }
 }
 

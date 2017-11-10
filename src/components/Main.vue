@@ -26,7 +26,7 @@ export default {
   background: rgba(20, 33, 27, 0.6);;
   width: 100%;
   padding: 40px 0;
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
