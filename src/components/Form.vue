@@ -1,5 +1,10 @@
 <template>
   <section class="subscribe-wrapper">
+      <h3>Come speak at ReactFest</h3>
+      <a href="https://t.co/bWzDRNZzQA"
+        class="submit">
+          Call for Papers
+      </a>
     <form action="https://yld.us16.list-manage.com/subscribe/post?u=d159c019fc10dc08b3914ac05&amp;id=5a3093fa2a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" v-on:submit="onSubmit">
       <h3>Subscribe to hear about the latest ReactFest news</h3>
         <div class="fields">
@@ -8,7 +13,7 @@
           <div class="response" style="display:none"></div>
           <div class="response" style="display:none"></div>
           </div>
-              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
             <input type="text"
               name="b_d159c019fc10dc08b3914ac05_5a3093fa2a"
               tabindex="-1"
@@ -23,6 +28,23 @@
                 </button>
           </div>
     </form>
+      <ul>
+        <li>
+          <a href="mailto:hey@reactfest.com">
+            <img src="../assets/email.svg"  width="40px">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/ReactFest" target="_blank" rel="noopener">
+            <img src="../assets/github.svg"  width="40px">
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/ReactFest/" target="_blank" rel="noopener">
+            <img src="../assets/twitter.svg"  width="40px">
+          </a>
+        </li>
+      </ul>
 </section>
 </template>
 
@@ -42,7 +64,21 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+
+  ul {
+    position: absolute;
+    bottom: -150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    li {
+      list-style: none;
+      margin: 0 20px;
+    }
+  }
 
 h3 {
   font-family: 'Roboto', sans-serif;
@@ -91,6 +127,10 @@ h3 {
   text-transform: uppercase;
   transition: all 200ms ease;
   cursor: pointer;
+  display: block;
+  text-decoration: none;
+  line-height: 60px;
+  margin: auto;
 
   color: #FFFFFF;
 
@@ -116,6 +156,10 @@ h3 {
   }
 }
 
+a.submit {
+  margin-bottom: 60px;
+}
+
 .fields {
   display: inline-flex;
   width: 100%;
@@ -139,5 +183,6 @@ h3 {
 
 .subscribe-wrapper {
   margin-top: 40px;
+  position: relative;
 }
 </style>

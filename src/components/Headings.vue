@@ -2,7 +2,7 @@
   <div>
       <h1>ReactFest</h1>
       <h2>A One Day Festival of Amazing React Content</h2>
-      <h3>2nd March 2018, London</h3>
+      <h3>9th March 2018, London</h3>
   </div>
 </template>
 
