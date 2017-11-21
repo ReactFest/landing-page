@@ -2,7 +2,8 @@
   <div>
       <h1>ReactFest</h1>
       <h2>A One Day Festival of Amazing React Content</h2>
-      <h3>9th March 2018, London</h3>
+      <h3>Single track. 200 developers. Non-profit. By the community for the community.</h3>
+      <h2 class="date">9th March 2018, London</h2>
   </div>
 </template>
 
@@ -18,11 +19,15 @@ h1 {
   line-height: 57px;
   font-size: 100px;
   transition: all 200ms ease;
-  font-family: 'Sweden Sans';
+  font-family: 'Sweden Sans', sans-serif;
 
   @media only screen and (max-width: 600px) {
     font-size: 60px;
   }
+}
+
+.date {
+  margin-top: 80px;
 }
 
 h2 {

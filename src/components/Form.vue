@@ -1,9 +1,8 @@
 <template>
   <section class="subscribe-wrapper">
-      <h3>Come speak at ReactFest</h3>
       <a href="https://t.co/bWzDRNZzQA"
         class="submit">
-          <span>Call for Papers</span>
+          <span>BECOME A SPEAKER</span>
       </a>
     <form action="https://yld.us16.list-manage.com/subscribe/post?u=d159c019fc10dc08b3914ac05&amp;id=5a3093fa2a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" v-on:submit="onSubmit">
       <h3>Subscribe to hear about the latest ReactFest news</h3>
